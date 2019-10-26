@@ -28,3 +28,7 @@
 .h1 span {
     text-transform: uppercase;
 }
+
+.menu {
+  width: 100%;
+}
