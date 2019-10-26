@@ -39,3 +39,18 @@
     right: 30px;
     top: 10px;
 }
+
+.wrapper {
+    width: 100%;
+    padding: 80px 30px;
+}
+
+.panel {
+    width: 228px;
+    height: 246px;
+    border: 2px solid gray;
+}
+
+.panel ul li:nth-child(2){
+    border-bottom: 2px solid gray;
+}
