@@ -42,7 +42,7 @@
 
 .wrapper {
     width: 100%;
-    padding: 80px 30px;
+    padding: 45px 30px;
 }
 
 .panel {
@@ -51,6 +51,19 @@
     border: 2px solid gray;
 }
 
+.panel ul {
+    list-style: none;
+    padding-bottom: 52px;
+}
+
+.panel ul li {
+    height: 48px;
+}
+
 .panel ul li:nth-child(2){
     border-bottom: 2px solid gray;
+}
+
+.tool {
+    margin-bottom: 20px;
 }
