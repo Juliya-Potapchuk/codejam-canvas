@@ -67,6 +67,17 @@
     height: 48px;
 }
 
+.panel-item span { 
+    margin-left: 50px;
+    line-height: 39px;
+}
+
+.panel-img {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
 .panel ul li:nth-child(2){
     border-bottom: 2px solid gray;
 }
