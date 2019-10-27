@@ -101,3 +101,12 @@
 .size.panel ul .panel-item {
     border: none;
 }
+
+.size.panel ul .panel-item:hover {
+    background-color: grey;
+ }
+                                  
+ canvas {
+     margin-top: 25px;
+     box-shadow: 0 2px 6px grey;
+ }
