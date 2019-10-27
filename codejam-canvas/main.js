@@ -32,7 +32,7 @@ button3.addEventListener('click', function (){
     const canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
     pic = new Image();
-    pic.src = './image.png';
+    pic.src = './images/icon_rsschool.png';
     pic.onload = function() {
     ctx.drawImage(pic,0,0,512,512);
 }
