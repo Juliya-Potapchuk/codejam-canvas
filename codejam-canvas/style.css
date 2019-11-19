@@ -30,7 +30,7 @@
     width: 276px;
 }
 
-.h1 span {
+.h1-letters {
     text-transform: uppercase;
 }
 
@@ -58,7 +58,7 @@
     border: 2px solid gray;
 }
 
-.panel ul {
+.panel-list {
     font-family: Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -68,12 +68,12 @@
     padding-bottom: 52px;
 }
 
-.panel ul li {
+.panel-item {
     position: relative;
     height: 48px;
 }
 
-.panel-item span { 
+.panel-item-name { 
     margin-left: 50px;
     line-height: 39px;
 }
@@ -84,7 +84,7 @@
     left: 10px;
 }
 
-.panel ul li:nth-child(2){
+.panel-list li:nth-child(2) {
     border-bottom: 2px solid gray;
 }
 
@@ -98,15 +98,15 @@
     border: 1px solid black;
 }
 
-.size.panel ul .panel-item {
+.panel-list-size .panel-item {
     border: none;
 }
 
-.size.panel ul .panel-item:hover {
+.panel-list-size .panel-item:hover {
     background-color: grey;
  }
                                   
- canvas {
+.canvas {
      margin-top: 25px;
      box-shadow: 0 2px 6px grey;
  }
