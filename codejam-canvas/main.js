@@ -11,10 +11,10 @@ let picture1 = [["00BCD4", "FFEB3B","FFEB3B","00BCD4"],
                ["00BCD4", "FFEB3B","FFEB3B","00BCD4"]];
 
 function drawCanvas1(picture) {
-    const canvas = document.querySelector("canvas"),
-        ctx = canvas.getContext("2d"),
-        width = picture[0].length,
-        height = picture.length,
+    const canvas = document.querySelector("canvas");
+        ctx = canvas.getContext("2d");
+        width = picture[0].length;
+        height = picture.length;
         scale = 512 / picture.length;
 
     canvas.width = width * scale;
@@ -29,8 +29,8 @@ function drawCanvas1(picture) {
 }
 
 button3.addEventListener('click', function (){
-    const canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext('2d'),
+    const canvas = document.getElementById("canvas");
+    ctx = canvas.getContext('2d');
     pic = new Image();
     pic.src = './images/icon_rsschool.png';
     pic.onload = function() {
