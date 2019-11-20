@@ -1,4 +1,5 @@
 const buttonDrawSize4 = document.getElementById('buttonDrawSize4');
+const buttonDrawSize32 = document.getElementById('buttonDrawSize32');
 const buttonDrawSize256 = document.getElementById('buttonDrawSize256');
 
 let picture = [['00BCD4', 'FFEB3B','FFEB3B','00BCD4'],
@@ -22,6 +23,37 @@ buttonDrawSize4.addEventListener('click', function() {
             ctx.fillRect(col * scale, row * scale, scale, scale);
         };
     };
+});
+
+buttonDrawSize32.addEventListener('click', function() {
+    const canvas = document.querySelector('canvas');
+    ctx = canvas.getContext('2d');
+
+    url = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/32x32.json';
+ 
+    fetch(url)
+    .then(response => response.json())
+    .then(matrix => {
+        width = matrix[0].length;
+        height = matrix.length;
+        scale = 512 / matrix.length;
+
+        canvas.width = width * scale;
+        canvas.height = height * scale;
+
+        let newMatrix = matrix.map(function(arrOut) {
+            return arrOut.map(function(arrInner) {
+            return "rgba(" + arrInner + ")";
+            });
+        });
+
+        for(var row = 0; row < canvas.height; row++) {
+            for(var col = 0; col < canvas.width; col++) { 
+                ctx.fillStyle = newMatrix[row][col]; 
+                ctx.fillRect(col * scale, row * scale, scale, scale); 
+            };
+        };  
+    });
 });
 
 buttonDrawSize256.addEventListener('click', function(){
